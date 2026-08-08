@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Director Vision | Etos & Gall — Norman van Ameyden van Duym</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ahblue: '#002B49',
+                        etosgreen: '#007A5E',
+                        gallred: '#8A1C14',
+                        accent: '#0072CE'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Header -->
+    <header class="bg-ahblue text-white shadow-md">
+        <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+                <span class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Interne Product Director Pitch[span_3](start_span)[span_3](end_span)</span>
+                <h1 class="text-2xl md:text-3xl font-bold tracking-tight">Etos & Gall & Gall Domein</h1>
+                <p class="text-slate-300 text-sm mt-1">Norman van Ameyden van Duym — Group Product Manager (AH)[span_4](start_span)[span_4](end_span)[span_5](start_span)[span_5](end_span)</p>
+            </div>
+            <div class="flex bg-slate-800 p-1 rounded-lg border border-slate-700">
+                <button onclick="switchBrand('etos')" id="btn-etos" class="px-4 py-2 text-xs font-bold rounded-md transition-all bg-etosgreen text-white shadow">Etos Focus</button>
+                <button onclick="switchBrand('gall')" id="btn-gall" class="px-4 py-2 text-xs font-bold rounded-md transition-all text-slate-300 hover:text-white">Gall & Gall Focus</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 py-10 w-full flex-grow">
+        
+        <!-- Brand Dynamic Intro Banner -->
+        <div id="brand-banner" class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200 mb-8 transition-all">
+            <div class="flex items-center gap-3 mb-3">
+                <span id="brand-badge" class="px-3 py-1 text-xs font-bold uppercase rounded-full bg-emerald-100 text-etosgreen">Etos Propositie</span>
+                <h2 id="brand-title" class="text-xl font-bold text-slate-900">Omnichannel Gezondheid & Persoonlijke Welzijn</h2>
+            </div>
+            <p id="brand-desc" class="text-slate-600 leading-relaxed">
+                Focus op de integratie van digital, commerce en winkeloperatie[span_6](start_span)[span_6](end_span). Het naadloos verbinden van online gezondheidsadvies en beauty-proposities met de fysieke Etos-winkels, ondersteund door datagedreven personalisatie.
+            </p>
+        </div>
+
+        <!-- Track Record Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <div class="text-2xl font-black text-accent mb-1">1.200+</div>
+                <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Winkels & Schaal</div>
+                <p class="text-sm text-slate-600 mt-2">Ervaring met landelijke uitrol van innovaties van 0 tot alle winkels en miljoenen actieve gebruikers[span_7](start_span)[span_7](end_span).</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <div class="text-2xl font-black text-accent mb-1">+15%</div>
+                <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Commerciële Uplift</div>
+                <p class="text-sm text-slate-600 mt-2">Bewezen track record in het transformeren van traffic-domeinen naar commercieel geoptimaliseerde platformen[span_8](start_span)[span_8](end_span).</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <div class="text-2xl font-black text-accent mb-1">GenAI & Ops</div>
+                <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">End-to-End Domein</div>
+                <p class="text-sm text-slate-600 mt-2">Leiden van complexe transformaties op het snijvlak van digital, data, analytics en winkeloperatie[span_9](start_span)[span_9](end_span)[span_10](start_span)[span_10](end_span).</p>
+            </div>
+        </div>
+
+        <!-- 30-60-90 Day Roadmap -->
+        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200">
+            <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
+                <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                Mijn Eerste 90 Dagen Product Strategie
+            </h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+                <!-- Day 30 -->
+                <div class="border-l-2 border-accent pl-4">
+                    <span class="text-xs font-bold text-accent uppercase">Dag 1 – 30</span>
+                    <h4 class="font-bold text-slate-800 text-sm mt-1">Listen & Align</h4>
+                    <p class="text-xs text-slate-600 mt-2">Diepgaande duik in de portfolio's van Etos en Gall & Gall[span_11](start_span)[span_11](end_span). Gesprekken voeren met directies, category managers, tech leads en winkelvloer-experts om operationele knelpunten en kansen scherp te krijgen[span_12](start_span)[span_12](end_span).</p>
+                </div>
+                <!-- Day 60 -->
+                <div class="border-l-2 border-accent pl-4">
+                    <span class="text-xs font-bold text-accent uppercase">Dag 31 – 60</span>
+                    <h4 class="font-bold text-slate-800 text-sm mt-1">Focus & Roadmap</h4>
+                    <p class="text-xs text-slate-600 mt-2">Harmoniseren van de meerjarige productvisie en roadmap[span_13](start_span)[span_13](end_span). Aanbrengen van scherpe prioriteiten in het initiatieven-portfolio en versterken van de Agile/Scrum samenwerking tussen teams[span_14](start_span)[span_14](end_span)[span_15](start_span)[span_15](end_span).</p>
+                </div>
+                <!-- Day 90 -->
+                <div class="border-l-2 border-accent pl-4">
+                    <span class="text-xs font-bold text-accent uppercase">Dag 61 – 90</span>
+                    <h4 class="font-bold text-slate-800 text-sm mt-1">Scale & Impact</h4>
+                    <p class="text-xs text-slate-600 mt-2">Lancering van de eerste end-to-end omnichannel optimalisaties. Datagedreven sturing inrichten om directe business impact en verbeterde winkelprocessen meetbaar te maken[span_16](start_span)[span_16](end_span)[span_17](start_span)[span_17](end_span).</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 mt-12 py-6 text-center text-xs text-slate-500">
+        Norman van Ameyden van Duym — Sollicitatie Product Director Etos & Gall (Hay 19)[span_18](start_span)[span_18](end_span)[span_19](start_span)[span_19](end_span)
+    </footer>
+
+    <!-- Script for Brand Switching -->
+    <script>
+        const content = {
+            etos: {
+                badge: "Etos Propositie",
+                badgeClass: "bg-emerald-100 text-etosgreen",
+                btnActive: "bg-etosgreen text-white shadow",
+                title: "Omnichannel Gezondheid & Persoonlijke Welzijn",
+                desc: "Focus op de integratie van digital, commerce en winkeloperatie[span_20](start_span)[span_20](end_span). Het naadloos verbinden van online gezondheidsadvies en beauty-proposities met de fysieke Etos-winkels, ondersteund door datagedreven personalisatie."
+            },
+            gall: {
+                badge: "Gall & Gall Propositie",
+                badgeClass: "bg-rose-100 text-gallred",
+                btnActive: "bg-gallred text-white shadow",
+                title: "De Ultieme Advies- & Genietersbeleving",
+                desc: "Focus op het versterken van de omnichannel klantbeleving[span_21](start_span)[span_21](end_span) voor wijn- en drankenliefhebbers. Het optimaliseren van digitale smaakprofielen, lokale winkelvoorraad en snelle order- en afhaalprocessen."
+            }
+        };
+
+        function switchBrand(brand) {
+            const data = content[brand];
+            document.getElementById('brand-badge').innerText = data.badge;
+            document.getElementById('brand-badge').className = `px-3 py-1 text-xs font-bold uppercase rounded-full ${data.badgeClass}`;
+            document.getElementById('brand-title').innerText = data.title;
+            document.getElementById('brand-desc').innerText = data.desc;
+
+            const btnEtos = document.getElementById('btn-etos');
+            const btnGall = document.getElementById('btn-gall');
+
+            if(brand === 'etos') {
+                btnEtos.className = `px-4 py-2 text-xs font-bold rounded-md transition-all ${data.btnActive}`;
+                btnGall.className = "px-4 py-2 text-xs font-bold rounded-md transition-all text-slate-300 hover:text-white";
+            } else {
+                btnGall.className = `px-4 py-2 text-xs font-bold rounded-md transition-all ${data.btnActive}`;
+                btnEtos.className = "px-4 py-2 text-xs font-bold rounded-md transition-all text-slate-300 hover:text-white";
+            }
+        }
+    </script>
+</body>
+</html>
