@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Director Vision | Etos, Gall & AHEG — Norman van Ameyden van Duym</title>
+    <title>Productdirector visie | Etos, Gall & Gall & AHEG — Norman van Ameyden van Duym</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -29,29 +29,29 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
 
-    <!-- Corporate Header (Met donker contrast voor maximale leesbaarheid) -->
+    <!-- Corporate Header -->
     <header style="background-color: #002B49;" class="text-white shadow-lg border-b-4 border-[#009FE3]">
         <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div>
-                <span id="header-subtitle" class="text-xs uppercase tracking-widest text-[#91CDB2] font-bold">Product Director Pitch</span>
+                <span id="header-subtitle" class="text-xs uppercase tracking-widest text-[#91CDB2] font-bold">Productdirector pitch</span>
                 <h1 style="color: #FFFFFF;" class="text-2xl md:text-3xl font-extrabold tracking-tight">
-                    Product Visie Etos & Gall & Gall
+                    Productvisie Etos & Gall & Gall
                 </h1>
                 <p style="color: #94A3B8;" class="text-sm mt-1">
                     Norman van Ameyden van Duym — Group Product Manager
                 </p>
             </div>
             
-            <!-- 3-Way Brand Toggle (AHEG op 3e plek meest rechts) -->
+            <!-- 3-Way Brand Toggle Buttons -->
             <div class="flex bg-slate-900 p-1 rounded-xl border border-slate-700 shadow-inner gap-1">
-                <button onclick="switchBrand('etos')" id="btn-etos" class="px-4 py-2 text-xs font-bold rounded-lg brand-transition bg-[#91CDB2] text-black shadow">
-                    Etos Focus
+                <button onclick="switchBrand('etos')" id="btn-etos" class="px-5 py-2 text-xs font-bold rounded-lg brand-transition bg-[#91CDB2] text-black shadow">
+                    Etos
                 </button>
-                <button onclick="switchBrand('gall')" id="btn-gall" class="px-4 py-2 text-xs font-bold rounded-lg brand-transition text-slate-300 hover:text-white">
-                    Gall & Gall Focus
+                <button onclick="switchBrand('gall')" id="btn-gall" class="px-5 py-2 text-xs font-bold rounded-lg brand-transition text-slate-300 hover:text-white">
+                    Gall & Gall
                 </button>
-                <button onclick="switchBrand('aheg')" id="btn-aheg" class="px-4 py-2 text-xs font-bold rounded-lg brand-transition text-slate-300 hover:text-white">
-                    AHEG Ecosysteem
+                <button onclick="switchBrand('aheg')" id="btn-aheg" class="px-5 py-2 text-xs font-bold rounded-lg brand-transition text-slate-300 hover:text-white">
+                    AHEG
                 </button>
             </div>
         </div>
@@ -60,66 +60,66 @@
     <!-- Main Content Container -->
     <main class="max-w-5xl mx-auto px-6 py-10 w-full flex-grow">
         
-        <!-- Dynamic Brand Intro Banner (Meekleurend per merk) -->
-        <div id="brand-banner" class="bg-[#F0F9F5] rounded-2xl p-6 md:p-8 shadow-sm border-l-8 border-[#91CDB2] border-y border-r border-slate-200 mb-8 brand-transition">
+        <!-- Dynamic Brand Intro Banner -->
+        <div id="brand-banner" class="bg-[#FFF5F9] rounded-2xl p-6 md:p-8 shadow-sm border-l-8 border-[#91CDB2] border-y border-r border-[#F4A5C7]/40 mb-8 brand-transition">
             <div class="flex items-center gap-3 mb-3">
-                <span id="brand-badge" class="px-3 py-1 text-xs font-bold uppercase rounded-full bg-[#91CDB2] text-black">
-                    Etos Propositie
+                <span id="brand-badge" class="px-3 py-1 text-xs font-bold rounded-full bg-[#F4A5C7] text-slate-900">
+                    Etos propositie
                 </span>
                 <h2 id="brand-title" class="text-xl md:text-2xl font-bold text-slate-900">
-                    Omnichannel Gezondheid, Beauty & Wellbeing
+                    Omnichannel gezondheid, beauty & wellbeing
                 </h2>
             </div>
             <p id="brand-desc" class="text-slate-700 leading-relaxed text-sm md:text-base">
-                Focus op het toegankelijk maken van je goed voelen en er goed uitzien. Verbinden van digitaal gezondheidsadvies, beauty-proposities en het Etos loyaliteitsprogramma met onze fysieke winkels en gedreven winkelcollega's.
+                Focus op het toegankelijk maken van je goed voelen en er goed uitzien. Verbinden van digitaal gezondheidsadvies, beautyproposities en het Etos loyaliteitsprogramma met onze fysieke winkels en gedreven winkelcollega's.
             </p>
         </div>
 
-        <!-- Dynamic Track Record / Achievements Grid (Geen harde cijfers bij Etos & Gall) -->
+        <!-- Dynamic Track Record / Achievements Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                <div id="metric-1-val" class="text-xl font-bold text-slate-900 mb-1">Service & Advies</div>
-                <div id="metric-1-lbl" class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Klantinzet & Keuze</div>
-                <p id="metric-1-desc" class="text-xs text-slate-600 mt-2">Toegankelijke begeleiding in Health, Skin Care en Beauty, zowel online als op de winkelvloer.</p>
+                <div id="metric-1-val" class="text-xl font-bold text-slate-900 mb-1">Service & advies</div>
+                <div id="metric-1-lbl" class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Klantinzet & keuze</div>
+                <p id="metric-1-desc" class="text-xs text-slate-600 mt-2">Toegankelijke begeleiding in gezondheid, huidverzorging en beauty, zowel online als op de winkelvloer.</p>
             </div>
             <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                <div id="metric-2-val" class="text-xl font-bold text-slate-900 mb-1">Digitale Groei</div>
-                <div id="metric-2-lbl" class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Etos App & E-Commerce</div>
+                <div id="metric-2-val" class="text-xl font-bold text-slate-900 mb-1">Digitale groei</div>
+                <div id="metric-2-lbl" class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Etos app & e-commerce</div>
                 <p id="metric-2-desc" class="text-xs text-slate-600 mt-2">Versnellen van de online klantreis en het verrijken van het Etos loyaliteitsprogramma voor herhaalaankopen.</p>
             </div>
             <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                <div id="metric-3-val" class="text-xl font-bold text-slate-900 mb-1">Winkel x Digital</div>
-                <div id="metric-3-lbl" class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Naadloze Klantreis</div>
+                <div id="metric-3-val" class="text-xl font-bold text-slate-900 mb-1">Winkel x digital</div>
+                <div id="metric-3-lbl" class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Naadloze klantreis</div>
                 <p id="metric-3-desc" class="text-xs text-slate-600 mt-2">Ondersteunen van winkelcollega's met slimme digitale tools voor optimale klantenservice.</p>
             </div>
         </div>
 
-        <!-- 100-Day Strategy Roadmap (Label-specifiek) -->
+        <!-- 100-Day Strategy Roadmap -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200">
             <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
-                <svg id="roadmap-icon" class="w-5 h-5 text-[#91CDB2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg id="roadmap-icon" class="w-5 h-5 text-[#F4A5C7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
                 </svg>
-                <span id="roadmap-title">100-Dagen Aanpak: Etos Product Strategie</span>
+                <span id="roadmap-title">100-dagen aanpak: Etos productstrategie</span>
             </h3>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
                 <!-- Dag 1 - 30 -->
-                <div id="card-30" class="border-l-4 border-[#91CDB2] pl-4 brand-transition">
+                <div id="card-30" class="border-l-4 border-[#F4A5C7] pl-4 brand-transition">
                     <span class="text-xs font-bold text-slate-700 uppercase">Dag 1 – 30</span>
-                    <h4 id="day30-title" class="font-bold text-slate-800 text-sm mt-1">Kennismaking & Luisteren</h4>
-                    <p id="day30-desc" class="text-xs text-slate-600 mt-2">Kennismaking met de directie van Etos, categorie managers, winkelteams en de Product/Tech collega's binnen GET. Diepgaande analyse van de huidige klantreis en winkelprocessen.</p>
+                    <h4 id="day30-title" class="font-bold text-slate-800 text-sm mt-1">Kennismaking & luisteren</h4>
+                    <p id="day30-desc" class="text-xs text-slate-600 mt-2">Kennismaking met de directie van Etos, categorie managers, winkelteams en de product- en techcollega's binnen GET. Diepgaande analyse van de huidige klantreis en winkelprocessen.</p>
                 </div>
                 <!-- Dag 31 - 60 -->
-                <div id="card-60" class="border-l-4 border-[#91CDB2] pl-4 brand-transition">
+                <div id="card-60" class="border-l-4 border-[#F4A5C7] pl-4 brand-transition">
                     <span class="text-xs font-bold text-slate-700 uppercase">Dag 31 – 60</span>
-                    <h4 id="day31-title" class="font-bold text-slate-800 text-sm mt-1">Drogisterij Visie & Roadmap</h4>
-                    <p id="day31-desc" class="text-xs text-slate-600 mt-2">Herijken van de Etos product-roadmap. Scherpe keuzes maken in initiatieven rondom gezondheidsadvies, beauty inspiratie en de Etos loyaliteitservaring.</p>
+                    <h4 id="day31-title" class="font-bold text-slate-800 text-sm mt-1">Drogisterijvisie & roadmap</h4>
+                    <p id="day31-desc" class="text-xs text-slate-600 mt-2">Herijken van de Etos productroadmap. Scherpe keuzes maken in initiatieven rondom gezondheidsadvies, beauty-inspiratie en de Etos loyaliteitservaring.</p>
                 </div>
                 <!-- Dag 61 - 90+ -->
-                <div id="card-90" class="border-l-4 border-[#91CDB2] pl-4 brand-transition">
+                <div id="card-90" class="border-l-4 border-[#F4A5C7] pl-4 brand-transition">
                     <span class="text-xs font-bold text-slate-700 uppercase">Dag 61 – 90+</span>
-                    <h4 id="day61-title" class="font-bold text-slate-800 text-sm mt-1">Executie & Winkel-impact</h4>
+                    <h4 id="day61-title" class="font-bold text-slate-800 text-sm mt-1">Executie & winkel-impact</h4>
                     <p id="day61-desc" class="text-xs text-slate-600 mt-2">Opleveren van de eerste verbeteringen in de Etos app en winkelondersteuning. Meten van klanttevredenheid, retentie en het versterken van de winkelervaring.</p>
                 </div>
             </div>
@@ -136,102 +136,102 @@
     <script>
         const brandData = {
             etos: {
-                subtitle: "Etos Focus Pitch",
+                subtitle: "Etos pitch",
                 subtitleColor: "#91CDB2",
-                bgClass: "bg-[#F0F9F5] rounded-2xl p-6 md:p-8 shadow-sm border-l-8 border-[#91CDB2] border-y border-r border-slate-200 mb-8 brand-transition",
-                badge: "Etos Propositie",
-                badgeClass: "bg-[#91CDB2] text-black font-bold",
-                cardBorder: "border-[#91CDB2]",
-                btnActive: "bg-[#91CDB2] text-black font-bold shadow",
-                title: "Omnichannel Gezondheid, Beauty & Wellbeing",
-                desc: "Focus op het toegankelijk maken van je goed voelen en er goed uitzien. Verbinden van digitaal gezondheidsadvies, beauty-proposities en het Etos loyaliteitsprogramma met onze fysieke winkels en gedreven winkelcollega's.",
+                bgClass: "bg-[#FFF5F9] rounded-2xl p-6 md:p-8 shadow-sm border-l-8 border-[#91CDB2] border-y border-r border-[#F4A5C7]/40 mb-8 brand-transition",
+                badge: "Etos propositie",
+                badgeClass: "bg-[#F4A5C7] text-slate-900 font-bold",
+                cardBorder: "border-[#F4A5C7]",
+                btnActive: "bg-[#91CDB2] text-black font-bold shadow border border-[#F4A5C7]",
+                title: "Omnichannel gezondheid, beauty & wellbeing",
+                desc: "Focus op het toegankelijk maken van je goed voelen en er goed uitzien. Verbinden van digitaal gezondheidsadvies, beautyproposities en het Etos loyaliteitsprogramma met onze fysieke winkels en gedreven winkelcollega's.",
                 
-                m1Val: "Service & Advies",
-                m1Lbl: "Klantinzet & Keuze",
-                m1Desc: "Toegankelijke begeleiding in Health, Skin Care en Beauty, zowel online als op de winkelvloer.",
+                m1Val: "Service & advies",
+                m1Lbl: "Klantinzet & keuze",
+                m1Desc: "Toegankelijke begeleiding in gezondheid, huidverzorging en beauty, zowel online als op de winkelvloer.",
                 
-                m2Val: "Digitale Groei",
-                m2Lbl: "Etos App & E-Commerce",
+                m2Val: "Digitale groei",
+                m2Lbl: "Etos app & e-commerce",
                 m2Desc: "Versnellen van de online klantreis en het verrijken van het Etos loyaliteitsprogramma voor herhaalaankopen.",
                 
-                m3Val: "Winkel x Digital",
-                m3Lbl: "Naadloze Klantreis",
+                m3Val: "Winkel x digital",
+                m3Lbl: "Naadloze klantreis",
                 m3Desc: "Ondersteunen van winkelcollega's met slimme digitale tools voor optimale klantenservice.",
                 
-                roadmapTitle: "100-Dagen Aanpak: Etos Product Strategie",
-                day30Title: "Kennismaking & Luisteren",
-                day30Desc: "Kennismaking met de directie van Etos, categorie managers, winkelteams en de Product/Tech collega's binnen GET. Diepgaande analyse van de huidige klantreis en winkelprocessen.",
+                roadmapTitle: "100-dagen aanpak: Etos productstrategie",
+                day30Title: "Kennismaking & luisteren",
+                day30Desc: "Kennismaking met de directie van Etos, categorie managers, winkelteams en de product- en techcollega's binnen GET. Diepgaande analyse van de huidige klantreis en winkelprocessen.",
                 
-                day31Title: "Drogisterij Visie & Roadmap",
-                day31Desc: "Herijken van de Etos product-roadmap. Scherpe keuzes maken in initiatieven rondom gezondheidsadvies, beauty inspiratie en de Etos loyaliteitservaring.",
+                day31Title: "Drogisterijvisie & roadmap",
+                day31Desc: "Herijken van de Etos productroadmap. Scherpe keuzes maken in initiatieven rondom gezondheidsadvies, beauty-inspiratie en de Etos loyaliteitservaring.",
                 
-                day61Title: "Executie & Winkel-impact",
+                day61Title: "Executie & winkel-impact",
                 day61Desc: "Opleveren van de eerste verbeteringen in de Etos app en winkelondersteuning. Meten van klanttevredenheid, retentie en het versterken van de winkelervaring."
             },
             gall: {
-                subtitle: "Gall & Gall Focus Pitch",
+                subtitle: "Gall & Gall pitch",
                 subtitleColor: "#FF641E",
                 bgClass: "bg-[#FFF7F3] rounded-2xl p-6 md:p-8 shadow-sm border-l-8 border-[#FF641E] border-y border-r border-slate-200 mb-8 brand-transition",
-                badge: "Gall & Gall Propositie",
+                badge: "Gall & Gall propositie",
                 badgeClass: "bg-[#FF641E] text-white font-bold",
                 cardBorder: "border-[#FF641E]",
                 btnActive: "bg-[#FF641E] text-white font-bold shadow",
-                title: "De Vertrouwde Gids & Expert in Dranken",
+                title: "De vertrouwde gids & expert in dranken",
                 desc: "Inspireren om momenten bewuster te beleven door een unieke advies- en genieterservaring te bieden. Focus op gepersonaliseerd smaakadvies, winkelvoorraad inzicht en een frictieloos bestel- en afhaalproces.",
                 
-                m1Val: "Smaak & Advies",
-                m1Lbl: "Inspirerende Klantervaring",
+                m1Val: "Smaak & advies",
+                m1Lbl: "Inspirerende klantervaring",
                 m1Desc: "Gepersonaliseerde dranken- en wijnadviezen op basis van smaakprofielen en cadeau-inspiratie.",
                 
-                m2Val: "Omnichannel Gemak",
-                m2Lbl: "Bestellen & Afhalen",
+                m2Val: "Omnichannel gemak",
+                m2Lbl: "Bestellen & afhalen",
                 m2Desc: "Soepele e-commerce afhandeling en snelle levering of afhaalopties vanuit ons landelijke winkelnetwerk.",
                 
-                m3Val: "Ondernemende Teams",
-                m3Lbl: "Excellente Winkelondersteuning",
+                m3Val: "Ondernemende teams",
+                m3Lbl: "Excellente winkelondersteuning",
                 m3Desc: "Slimme digitale tools voor winkelcollega's om klanten nog beter te adviseren als vertrouwde gids.",
                 
-                roadmapTitle: "100-Dagen Aanpak: Gall & Gall Product Strategie",
-                day30Title: "Kennismaking & Winkelvloer",
+                roadmapTitle: "100-dagen aanpak: Gall & Gall productstrategie",
+                day30Title: "Kennismaking & winkelvloer",
                 day30Desc: "Kennismaking met het Gall & Gall directieteam, drankenexperts, winkelteams en het GET-team. Meelopen in de winkel om de klantbehoefte en operationele wensen te voelen.",
                 
-                day31Title: "Smaak & Advies Roadmap",
-                day31Desc: "Prioriteren van productinitiatieven rondom digitale smaakprofielen, actie-promoties, cadeau-zoekers en winkelvoorraad inzicht.",
+                day31Title: "Smaak & advies roadmap",
+                day31Desc: "Prioriteren van productinitiatieven rondom digitale smaakprofielen, actiepromoties, cadeauzoekers en winkelvoorraad inzicht.",
                 
-                day61Title: "Omnichannel Oplevering",
-                day61Desc: "Versnellen van de e-commerce en winkelketen-features. Borgen van een vlekkeloze digitale ondersteuning rondom belangrijke genietsamenkomsten en actiemomenten."
+                day61Title: "Omnichannel oplevering",
+                day61Desc: "Versnellen van de e-commerce en winkelketenfeatures. Borgen van een vlekkeloze digitale ondersteuning rondom belangrijke genietsamenkomsten en actiemomenten."
             },
             aheg: {
-                subtitle: "AHEG Ecosysteem Pitch 2027–2030",
+                subtitle: "AHEG ecosysteem pitch 2027–2030",
                 subtitleColor: "#009FE3",
                 bgClass: "bg-[#F0F8FF] rounded-2xl p-6 md:p-8 shadow-sm border-l-8 border-[#009FE3] border-y border-r border-slate-200 mb-8 brand-transition",
-                badge: "AHEG Ecosysteem Focus",
+                badge: "AHEG ecosysteem focus",
                 badgeClass: "bg-[#009FE3] text-white font-bold",
                 cardBorder: "border-[#009FE3]",
                 btnActive: "bg-[#009FE3] text-white font-bold shadow",
-                title: "Van 3 Retailmerken naar 1 AHEG Klantecosysteem",
-                desc: "Het overkoepelend verbinden van AH, Etos en Gall & Gall via één gedeelde Customer Identity (Single Customer View), een cross-brand Loyalty Programma en contextbewuste Agentic Shopping assistenten. Aangedreven door het GET-platform en centrale TechNL AI-capabilities.",
+                title: "Van 3 retailmerken naar 1 AHEG-klantecosysteem",
+                desc: "Het overkoepelend verbinden van AH, Etos en Gall & Gall via één gedeelde klantidentiteit (Single Customer View), een cross-brand loyaltyprogramma en contextbewuste agentic shopping assistenten. Aangedreven door het GET-platform en centrale TechNL AI-capabilities.",
                 
                 m1Val: "Single Customer View",
-                m1Lbl: "Gedeelde Klantidentiteit",
+                m1Lbl: "Gedeelde klantidentiteit",
                 m1Desc: "Harmonisatie van klantdata en profielen over AH, Etos en Gall & Gall heen voor naadloze herkenning.",
                 
-                m2Val: "Cross-Brand Loyalty",
-                m2Lbl: "Gedeelde Rewards & Wallet",
+                m2Val: "Cross-brand loyalty",
+                m2Lbl: "Gedeelde rewards & wallet",
                 m2Desc: "Opzetten van een gezamenlijk loyalty-ecosysteem dat share-of-wallet en retentie over alle banners verhoogt.",
                 
-                m3Val: "Shared AI & Commerce",
-                m3Lbl: "Agentic Assistants & Tech",
+                m3Val: "Shared AI & commerce",
+                m3Lbl: "Agentic assistants & tech",
                 m3Desc: "Hergebruik van centrale AI-platformen en GenAI-capabilities voor contextbewuste winkelervaringen.",
                 
-                roadmapTitle: "100-Dagen Aanpak: AHEG Ecosysteem Transformatie",
-                day30Title: "Ecosysteem Alignment & Audit",
+                roadmapTitle: "100-dagen aanpak: AHEG ecosysteemtransformatie",
+                day30Title: "Ecosysteem alignment & audit",
                 day30Desc: "Kennismaking met directies en IT-leads van AH, Etos, Gall & Gall en TechNL. In kaart brengen van de Customer 360 architectuur, gedeelde identiteit en loyalty OKR's.",
                 
-                day31Title: "Cross-Banner Prioritering",
-                day31Desc: "Harmoniseren van de overkoepelende AHEG product-roadmap. Prioriteit aan Tier 1 initiatieven (AHEG Loyalty, Agentic Shopping, Shared AI) met behoud van merkidentiteit.",
+                day31Title: "Cross-banner prioritering",
+                day31Desc: "Harmoniseren van de overkoepelende AHEG productroadmap. Prioriteit aan Tier 1 initiatieven (AHEG loyalty, agentic shopping, shared AI) met behoud van merkidentiteit.",
                 
-                day61Title: "Synergie & Scaled Delivery",
+                day61Title: "Synergie & scaled delivery",
                 day61Desc: "Schalen van centrale AI- & dataplatforms binnen GET. Versnellen van opleveringen via Engineering Excellence, DORA-metrics en meetbare ecosysteemwaarde."
             }
         };
@@ -286,14 +286,14 @@
             const btnGall = document.getElementById('btn-gall');
             const btnAheg = document.getElementById('btn-aheg');
 
-            btnEtos.className = "px-4 py-2 text-xs rounded-lg brand-transition text-slate-300 hover:text-white font-normal";
-            btnGall.className = "px-4 py-2 text-xs rounded-lg brand-transition text-slate-300 hover:text-white font-normal";
-            btnAheg.className = "px-4 py-2 text-xs rounded-lg brand-transition text-slate-300 hover:text-white font-normal";
+            btnEtos.className = "px-5 py-2 text-xs rounded-lg brand-transition text-slate-300 hover:text-white font-normal";
+            btnGall.className = "px-5 py-2 text-xs rounded-lg brand-transition text-slate-300 hover:text-white font-normal";
+            btnAheg.className = "px-5 py-2 text-xs rounded-lg brand-transition text-slate-300 hover:text-white font-normal";
 
             // Activate button
-            if (brand === 'etos') btnEtos.className = `px-4 py-2 text-xs rounded-lg brand-transition ${data.btnActive}`;
-            if (brand === 'gall') btnGall.className = `px-4 py-2 text-xs rounded-lg brand-transition ${data.btnActive}`;
-            if (brand === 'aheg') btnAheg.className = `px-4 py-2 text-xs rounded-lg brand-transition ${data.btnActive}`;
+            if (brand === 'etos') btnEtos.className = `px-5 py-2 text-xs rounded-lg brand-transition ${data.btnActive}`;
+            if (brand === 'gall') btnGall.className = `px-5 py-2 text-xs rounded-lg brand-transition ${data.btnActive}`;
+            if (brand === 'aheg') btnAheg.className = `px-5 py-2 text-xs rounded-lg brand-transition ${data.btnActive}`;
 
             // Cards border updates
             ['card-30', 'card-60', 'card-90'].forEach(id => {
