@@ -3,52 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Director Vision | Etos & Gall — Norman van Ameyden van Duym</title>
+    <title>Product Director Vision | AHEG Ecosystem — Norman van Ameyden van Duym</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        // Corporate Ahold Delhaize
-                        ahblue: '#002B49',
-                        ahblue-light: '#0072CE',
-                        // Official Etos Palette
-                        etosgreen: '#91CDB2',
-                        etospink: '#F4A5C7',
-                        etosred: '#F6024C',
-                        etosblack: '#000000',
-                        // Official Gall & Gall Palette
-                        gallorange: '#FF641E',
-                        gallorange-dark: '#D14100',
-                        gallblack: '#242323'
+                        ahblue: '#009FE3',       // Albert Heijn Blauw
+                        adnavy: '#002B49',       // Ahold Delhaize Deep Navy
+                        etosgreen: '#91CDB2',    // Etos Groen
+                        etospink: '#F4A5C7',     // Etos Roze
+                        etosred: '#F6024C',      // Etos Actie Rood
+                        gallorange: '#FF641E',   // Gall Oranje
+                        galldark: '#D14100',     // Online Oranje
+                        gallblack: '#242323'     // Gall Zwart
                     }
                 }
             }
         }
     </script>
     <style>
-        .brand-transition {
-            transition: all 0.3s ease-in-out;
-        }
+        .brand-transition { transition: all 0.3s ease-in-out; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
 
-    <!-- Corporate Header -->
-    <header class="bg-ahblue text-white shadow-md border-b-4 border-ahblue-light">
+    <!-- Corporate Header (Donkere achtergrond voor optimaal contrast) -->
+    <header style="background-color: #002B49;" class="text-white shadow-lg border-b-4 border-[#009FE3]">
         <div class="max-w-5xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div>
-                <span class="text-xs uppercase tracking-widest text-sky-400 font-semibold">Interne Product Director Pitch</span>
-                <h1 class="text-2xl md:text-3xl font-bold tracking-tight">Etos & Gall & Gall Domein</h1>
-                <p class="text-slate-300 text-sm mt-1">Norman van Ameyden van Duym — Group Product Manager</p>
+                <span class="text-xs uppercase tracking-widest text-[#009FE3] font-bold">Product Director Pitch 2027–2030</span>
+                <h1 style="color: #FFFFFF;" class="text-2xl md:text-3xl font-extrabold tracking-tight">
+                    Van 3 Retailmerken naar 1 AHEG Klantecosysteem
+                </h1>
+                <p style="color: #94A3B8;" class="text-sm mt-1">
+                    Norman van Ameyden van Duym — Group Product Manager (AH)
+                </p>
             </div>
-            <!-- Brand Toggle Buttons -->
-            <div class="flex bg-slate-900 p-1 rounded-xl border border-slate-700 shadow-inner">
-                <button onclick="switchBrand('etos')" id="btn-etos" class="px-5 py-2 text-xs font-bold rounded-lg brand-transition bg-etosgreen text-black shadow">
+            
+            <!-- 3-Way Brand Toggle -->
+            <div class="flex bg-slate-900 p-1 rounded-xl border border-slate-700 shadow-inner gap-1">
+                <button onclick="switchBrand('aheg')" id="btn-aheg" class="px-4 py-2 text-xs font-bold rounded-lg brand-transition bg-[#009FE3] text-white shadow">
+                    AHEG Ecosysteem
+                </button>
+                <button onclick="switchBrand('etos')" id="btn-etos" class="px-4 py-2 text-xs font-bold rounded-lg brand-transition text-slate-300 hover:text-white">
                     Etos Focus
                 </button>
-                <button onclick="switchBrand('gall')" id="btn-gall" class="px-5 py-2 text-xs font-bold rounded-lg brand-transition text-slate-300 hover:text-white">
+                <button onclick="switchBrand('gall')" id="btn-gall" class="px-4 py-2 text-xs font-bold rounded-lg brand-transition text-slate-300 hover:text-white">
                     Gall & Gall Focus
                 </button>
             </div>
@@ -59,66 +61,66 @@
     <main class="max-w-5xl mx-auto px-6 py-10 w-full flex-grow">
         
         <!-- Dynamic Brand Intro Banner -->
-        <div id="brand-banner" class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border-l-8 border-etosgreen border-y border-r border-slate-200 mb-8 brand-transition">
+        <div id="brand-banner" class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border-l-8 border-[#009FE3] border-y border-r border-slate-200 mb-8 brand-transition">
             <div class="flex items-center gap-3 mb-3">
-                <span id="brand-badge" class="px-3 py-1 text-xs font-bold uppercase rounded-full bg-emerald-100 text-black">
-                    Etos Propositie
+                <span id="brand-badge" class="px-3 py-1 text-xs font-bold uppercase rounded-full bg-sky-100 text-[#009FE3]">
+                    🔴 Tier 1 Strategie 2027-2030
                 </span>
-                <h2 id="brand-title" class="text-xl font-bold text-slate-900">
-                    Omnichannel Gezondheid, Beauty & Wellbeing
+                <h2 id="brand-title" class="text-xl md:text-2xl font-bold text-slate-900">
+                    Transitie naar het Intelligente AHEG-Klantecosysteem
                 </h2>
             </div>
             <p id="brand-desc" class="text-slate-600 leading-relaxed text-sm md:text-base">
-                Verbinding maken tussen digital, commerce en winkeloperatie. Het naadloos integreren van online gezondheidsadvies en persoonlijke verzorgingsconcepten met de fysieke Etos-winkels, ondersteund door slimme personalisatie.
+                Het verbinden van AH, Etos en Gall & Gall via één gedeelde Customer Identity (Single Customer View), een cross-brand Loyalty Programma en contextbewuste Agentic Shopping assistenten. Aangedreven door het GET-platform (110+ DevOps) en centrale TechNL AI-capabilities.
             </p>
         </div>
 
-        <!-- Track Record Grid -->
+        <!-- Dynamic Track Record / Achievements Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                <div class="text-2xl font-black text-ahblue-light mb-1">1.200+</div>
-                <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Winkels & Schaal</div>
-                <p class="text-xs text-slate-600 mt-2">Ervaring met de uitrol van digitale innovaties van conceptfase tot landelijke dekking in alle winkels en miljoenen actieve gebruikers.</p>
+                <div id="metric-1-val" class="text-2xl font-black text-[#009FE3] mb-1">5M+ Actieve Users</div>
+                <div id="metric-1-lbl" class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Agentic & GenAI op Schaal</div>
+                <p id="metric-1-desc" class="text-xs text-slate-600 mt-2">Bewezen ervaring met het bouwen en opschalen van contextbewuste AI-assistenten (o.a. Steijn) van pilot naar miljoenen gebruikers.</p>
             </div>
             <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                <div class="text-2xl font-black text-ahblue-light mb-1">+15%</div>
-                <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Commerciële Groei</div>
-                <p class="text-xs text-slate-600 mt-2">Bewezen resultaten in het omzetten van traffic-domeinen naar commercieel en datagedreven geoptimaliseerde platforms.</p>
+                <div id="metric-2-val" class="text-2xl font-black text-[#009FE3] mb-1">+15% Omzet & SCV</div>
+                <div id="metric-2-lbl" class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Commerciële Datatransformatie</div>
+                <p id="metric-2-desc" class="text-xs text-slate-600 mt-2">Succesvolle transformatie van traffic-domeinen naar commercieel geoptimaliseerde platforms aangedreven door klantdata en personalisatie.</p>
             </div>
             <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                <div class="text-2xl font-black text-ahblue-light mb-1">GenAI & Ops</div>
-                <div class="text-xs uppercase tracking-wider text-slate-400 font-semibold">End-to-End Domein</div>
-                <p class="text-xs text-slate-600 mt-2">Leiden van complexe transformaties op het snijvlak van digital, analytics, e-commerce en winkeloperatie.</p>
+                <div id="metric-3-val" class="text-2xl font-black text-[#009FE3] mb-1">1.200 Winkels & eCom</div>
+                <div id="metric-3-lbl" class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Digital x Operations Executie</div>
+                <p id="metric-3-desc" class="text-xs text-slate-600 mt-2">Integrale oplossingen (Overblijvers, eCom-bezorgers, dynamische beprijzing) direct verankerd in dagelijkse winkel- en logistieke processen.</p>
             </div>
         </div>
 
-        <!-- 30-60-90 Day Roadmap -->
+        <!-- 100-Day Strategy Roadmap for AHEG -->
         <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-slate-200">
             <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
-                <svg class="w-5 h-5 text-ahblue-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                <svg class="w-5 h-5 text-[#009FE3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
                 </svg>
-                100-Dagen Aanpak: Product Strategie & Teamontwikkeling
+                100-Dagen Aanpak: Bouwstenen voor het AHEG Ecosysteem
             </h3>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
                 <!-- Dag 1 - 30 -->
-                <div id="card-30" class="border-l-4 border-etosgreen pl-4 brand-transition">
-                    <span id="badge-30" class="text-xs font-bold text-slate-700 uppercase">Dag 1 – 30</span>
-                    <h4 class="font-bold text-slate-800 text-sm mt-1">Luisteren & Alignment</h4>
-                    <p class="text-xs text-slate-600 mt-2">Analyse van de bestaande portfolio's van Etos en Gall & Gall. Afstemmen met directies, category managers, tech leads en winkelcollega's om behoeften en kansen helder te krijgen.</p>
+                <div id="card-30" class="border-l-4 border-[#009FE3] pl-4 brand-transition">
+                    <span class="text-xs font-bold text-slate-700 uppercase">Dag 1 – 30</span>
+                    <h4 class="font-bold text-slate-800 text-sm mt-1">Identity & Baseline Audit</h4>
+                    <p class="text-xs text-slate-600 mt-2">In kaart brengen van de huidige GET-architectuur versus de Tier 1 prioriteiten (Shared Identity, Loyalty OKRs, CDP data-funnels) en afstemmen met senior stakeholders.</p>
                 </div>
                 <!-- Dag 31 - 60 -->
-                <div id="card-60" class="border-l-4 border-etosgreen pl-4 brand-transition">
-                    <span id="badge-60" class="text-xs font-bold text-slate-700 uppercase">Dag 31 – 60</span>
-                    <h4 class="font-bold text-slate-800 text-sm mt-1">Prioritering & Roadmap</h4>
-                    <p class="text-xs text-slate-600 mt-2">Aanscherpen van de meerjarige productvisie en portfolio-roadmap. Duidelijke keuzes maken in initiatieven en versterken van de Agile samenwerking binnen het productteam.</p>
+                <div id="card-60" class="border-l-4 border-[#009FE3] pl-4 brand-transition">
+                    <span class="text-xs font-bold text-slate-700 uppercase">Dag 31 – 60</span>
+                    <h4 class="font-bold text-slate-800 text-sm mt-1">Cross-Banner Prioritering</h4>
+                    <p class="text-xs text-slate-600 mt-2">Harmoniseren van de meerjarige productroadmap. Prioriteit aan Tier 1 initiatieven (AHEG Loyalty & Agentic Shopping) met behoud van de unieke merkproposities van Etos & Gall.</p>
                 </div>
-                <!-- Dag 61 - 90 -->
-                <div id="card-90" class="border-l-4 border-etosgreen pl-4 brand-transition">
-                    <span id="badge-90" class="text-xs font-bold text-slate-700 uppercase">Dag 61 – 90+</span>
-                    <h4 class="font-bold text-slate-800 text-sm mt-1">Executie & Opschaling</h4>
-                    <p class="text-xs text-slate-600 mt-2">Uitrollen van de eerste omnichannel verbeteringen. Inrichten van KPI-sturing om impact op klanttevredenheid, conversie en winkelprocessen meetbaar te maken.</p>
+                <!-- Dag 61 - 90+ -->
+                <div id="card-90" class="border-l-4 border-[#009FE3] pl-4 brand-transition">
+                    <span class="text-xs font-bold text-slate-700 uppercase">Dag 61 – 90+</span>
+                    <h4 class="font-bold text-slate-800 text-sm mt-1">Shared AI & Velocity Opschalen</h4>
+                    <p class="text-xs text-slate-600 mt-2">Inzetten van centrale AI- & contentplatformen binnen GET. Teams empoweren om via DORA-metrics sneller, veiliger en waardegedreven te deliveren (Engineering Excellence).</p>
                 </div>
             </div>
         </div>
@@ -133,23 +135,59 @@
     <!-- Brand Switching Logic -->
     <script>
         const brandData = {
+            aheg: {
+                badge: "🔴 Tier 1 Strategie 2027-2030",
+                badgeClass: "bg-sky-100 text-[#009FE3] font-bold",
+                bannerBorder: "border-l-[#009FE3]",
+                cardBorder: "border-[#009FE3]",
+                btnActive: "bg-[#009FE3] text-white font-bold shadow",
+                title: "Transitie naar het Intelligente AHEG-Klantecosysteem",
+                desc: "Het verbinden van AH, Etos en Gall & Gall via één gedeelde Customer Identity (Single Customer View), een cross-brand Loyalty Programma en contextbewuste Agentic Shopping assistenten. Aangedreven door het GET-platform (110+ DevOps) en centrale TechNL AI-capabilities.",
+                m1Val: "5M+ Actieve Users",
+                m1Lbl: "Agentic & GenAI op Schaal",
+                m1Desc: "Bewezen ervaring met het bouwen en opschalen van contextbewuste AI-assistenten (o.a. Steijn) van pilot naar miljoenen gebruikers.",
+                m2Val: "+15% Omzet & SCV",
+                m2Lbl: "Commerciële Datatransformatie",
+                m2Desc: "Succesvolle transformatie van traffic-domeinen naar commercieel geoptimaliseerde platforms aangedreven door klantdata en personalisatie.",
+                m3Val: "1.200 Winkels & eCom",
+                m3Lbl: "Digital x Operations Executie",
+                m3Desc: "Integrale oplossingen (Overblijvers, eCom-bezorgers, dynamische beprijzing) direct verankerd in dagelijkse winkel- en logistieke processen."
+            },
             etos: {
-                badge: "Etos Propositie",
+                badge: "Etos #1 Selfcare Drogist",
                 badgeClass: "bg-[#91CDB2] text-black font-bold",
                 bannerBorder: "border-l-[#91CDB2]",
                 cardBorder: "border-[#91CDB2]",
                 btnActive: "bg-[#91CDB2] text-black font-bold shadow",
-                title: "Omnichannel Gezondheid, Beauty & Wellbeing",
-                desc: "Verbinding maken tussen digital, commerce en winkeloperatie. Het naadloos integreren van online gezondheidsadvies en persoonlijke verzorgingsconcepten met de fysieke Etos-winkels, ondersteund door slimme personalisatie."
+                title: "Etos Propositie: Health, Personal Care & Loyalty Integration",
+                desc: "Realisatie van de Etos 2028 strategie (€998M omzet, +9.3% online groei). Integratie van het Etos Loyalty programma binnen het brede AHEG-ecosysteem en verdere verdieping van de Health Ecosystem journeys.",
+                m1Val: "Etos Loyalty",
+                m1Lbl: "GET Platform Integratie",
+                m1Desc: "Bouwsteen voor het overkoepelende AHEG loyalty-ecosysteem en gepersonaliseerde retentiepijlers.",
+                m2Val: "+9.3% Online",
+                m2Lbl: "E-Commerce & Digital Health",
+                m2Desc: "Versnellen van online groei door de inzet van slimme aanbevelingen, advies-tools en frictieloze winkelreizen.",
+                m3Val: "Health Ecosystem",
+                m3Lbl: "AH x Etos Synergie",
+                m3Desc: "Koppeling tussen voeding (AH Leefstijlcheck) en persoonlijke gezondheid & verzorging bij Etos."
             },
             gall: {
-                badge: "Gall & Gall Propositie",
+                badge: "Gall & Gall Drankenexpert",
                 badgeClass: "bg-[#FF641E] text-white font-bold",
                 bannerBorder: "border-l-[#FF641E]",
                 cardBorder: "border-[#FF641E]",
                 btnActive: "bg-[#FF641E] text-white font-bold shadow",
-                title: "De Ultieme Advies- & Genietersbeleving",
-                desc: "Het versterken van de omnichannel klantreis voor dranken- en wijnliefhebbers. Focus op gepersonaliseerd smaakadvies, lokale winkelvoorraad-integratie en een vlekkeloze bestel- en afhaalervaring."
+                title: "Gall & Gall Propositie: Advies, Smaakprofielen & Rapid Omnichannel",
+                desc: "Inspireren om momenten bewuster te beleven. Verbinden van digitale smaakprofielen, het centrale Offer Engine platform (RBP) en omnichannel snelle afhaal- en bezorgopties vanuit winkels.",
+                m1Val: "Smaak & Advies",
+                m1Lbl: "Context-Aware Journeys",
+                m1Desc: "Gepersonaliseerd dranken- en wijnadvies op basis van klantvoorkeuren en diner-koppelingen.",
+                m2Val: "Omnichannel eCom",
+                m2Lbl: "Winkelnetwerk & Logistiek",
+                m2Desc: "Naadloze integratie van voorraad, winkelprocessen en snelle e-commerce afhandeling.",
+                m3Val: "Bewuste Consumptie",
+                m3Lbl: "Share-of-Wallet Groei",
+                m3Desc: "Verhogen van retentie en herhaalaankopen via gericht Cross-Banner Retail Media & Loyalty."
             }
         };
 
@@ -167,17 +205,31 @@
             document.getElementById('brand-title').innerText = data.title;
             document.getElementById('brand-desc').innerText = data.desc;
 
+            // Metrics updates
+            document.getElementById('metric-1-val').innerText = data.m1Val;
+            document.getElementById('metric-1-lbl').innerText = data.m1Lbl;
+            document.getElementById('metric-1-desc').innerText = data.m1Desc;
+
+            document.getElementById('metric-2-val').innerText = data.m2Val;
+            document.getElementById('metric-2-lbl').innerText = data.m2Lbl;
+            document.getElementById('metric-2-desc').innerText = data.m2Desc;
+
+            document.getElementById('metric-3-val').innerText = data.m3Val;
+            document.getElementById('metric-3-lbl').innerText = data.m3Lbl;
+            document.getElementById('metric-3-desc').innerText = data.m3Desc;
+
             // Button toggle
+            const btnAheg = document.getElementById('btn-aheg');
             const btnEtos = document.getElementById('btn-etos');
             const btnGall = document.getElementById('btn-gall');
 
-            if (brand === 'etos') {
-                btnEtos.className = `px-5 py-2 text-xs rounded-lg brand-transition ${data.btnActive}`;
-                btnGall.className = "px-5 py-2 text-xs rounded-lg brand-transition text-slate-300 hover:text-white font-normal";
-            } else {
-                btnGall.className = `px-5 py-2 text-xs rounded-lg brand-transition ${data.btnActive}`;
-                btnEtos.className = "px-5 py-2 text-xs rounded-lg brand-transition text-slate-300 hover:text-white font-normal";
-            }
+            btnAheg.className = "px-4 py-2 text-xs rounded-lg brand-transition text-slate-300 hover:text-white font-normal";
+            btnEtos.className = "px-4 py-2 text-xs rounded-lg brand-transition text-slate-300 hover:text-white font-normal";
+            btnGall.className = "px-4 py-2 text-xs rounded-lg brand-transition text-slate-300 hover:text-white font-normal";
+
+            if (brand === 'aheg') btnAheg.className = `px-4 py-2 text-xs rounded-lg brand-transition ${data.btnActive}`;
+            if (brand === 'etos') btnEtos.className = `px-4 py-2 text-xs rounded-lg brand-transition ${data.btnActive}`;
+            if (brand === 'gall') btnGall.className = `px-4 py-2 text-xs rounded-lg brand-transition ${data.btnActive}`;
 
             // Cards border updates
             ['card-30', 'card-60', 'card-90'].forEach(id => {
